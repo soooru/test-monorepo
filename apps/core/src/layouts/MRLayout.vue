@@ -39,15 +39,15 @@
 import { ref, defineComponent, onBeforeMount } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { MenuItemType } from '@/types/interface/menu';
+import { MenuItemType } from '@core/types/interface/menu';
 
-import TheGlobalNavList from '@/components/TheGlobalNavList.vue';
-import ThePCNavPanel from '@/components/ThePCNavPanel.vue';
-import TheAccount from '@/components/TheAccount.vue';
-import CommonLogo from '@/components/common/CommonLogo.vue';
-import CommonFooter from '@/components/common/CommonFooter.vue';
+import TheGlobalNavList from '@core/components/TheGlobalNavList.vue';
+import ThePCNavPanel from '@core/components/ThePCNavPanel.vue';
+import TheAccount from '@core/components/TheAccount.vue';
+import CommonLogo from '@core/components/common/CommonLogo.vue';
+import CommonFooter from '@core/components/common/CommonFooter.vue';
 
-import MenuDataService from '@/services/menu/menuDataService';
+import MenuDataService from '@core/services/menu/menuDataService';
 
 export default defineComponent({
   name: 'MRLayout',

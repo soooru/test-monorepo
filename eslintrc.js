@@ -15,8 +15,8 @@ module.exports = {
   },
   plugins: ['prettier'],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
     'prettier/prettier': 'error',
     'no-unused-vars': 'off', // 미사용 변수 허용
     '@typescript-eslint/no-inferrable-types': 'off', // 타입 추론이 가능한데 타입 지정을 하고 있을 경우

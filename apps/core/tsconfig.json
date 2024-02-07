@@ -12,10 +12,11 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
-    "baseUrl": ".",
-    "types": ["webpack-env", "axios"],
+    "baseUrl": "./",
+    "types": ["axios"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@core/*": ["src/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "resolveJsonModule": true

@@ -1,11 +1,9 @@
-// VUE_APP_BASE_URL is set in .env.local and .env.production
-
 import axios, { AxiosRequestConfig } from 'axios';
 import { useProgressStore } from '@/stores/progress-store'; //
 const progressStore = useProgressStore();
 
 const axiosConfig: AxiosRequestConfig = {
-  baseURL: process.env.VUE_APP_BASE_URL,
+  baseURL: 'http://localhost:3000',
 };
 
 const axiosCall = axios.create(axiosConfig);

@@ -4,7 +4,7 @@ import routePaths from './paths';
 import { useUserStore } from '@/stores/user-store';
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(''),
   routes: routePaths,
 });
 

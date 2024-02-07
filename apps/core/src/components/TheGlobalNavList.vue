@@ -30,7 +30,7 @@ import { defineComponent, ref } from 'vue';
 import { MenuItemType, SubGroupType } from '@/types/interface/menu';
 import { computed } from 'vue';
 
-import CommonLogo from '@/components/common/CommonLogo.vue';
+import CommonLogo from '@core/components/common/CommonLogo.vue';
 
 export default defineComponent({
   props: {

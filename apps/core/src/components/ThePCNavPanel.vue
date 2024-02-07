@@ -30,7 +30,7 @@
 <script lang="ts">
 import { defineComponent, computed, ref } from 'vue';
 import { MenuItemType, SubGroupType } from '@/types/interface/menu';
-import CommonLogo from '@/components/common/CommonLogo.vue';
+import CommonLogo from '@core/components/common/CommonLogo.vue';
 
 export default defineComponent({
   name: 'ThePCNavPanel',
