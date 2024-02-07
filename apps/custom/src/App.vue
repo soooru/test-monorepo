@@ -1,16 +1,11 @@
 <template>
   <router-view />
-  <CommonCircleProgress />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import CommonCircleProgress from '@/components/common/CommonCircleProgress.vue';
 import '@/assets/css/global.scss';
 export default defineComponent({
   name: 'App',
-  components: {
-    CommonCircleProgress,
-  },
 });
 </script>
 <style>
