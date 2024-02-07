@@ -1,0 +1,31 @@
+// vuetify와 동일한 breakpoints 사용
+
+$vuetify-breakpoints: (
+  xs: 600px,
+  sm: 960px,
+  md: 1280px,
+  lg: 1920px,
+  xl: 2560px,
+);
+
+$breakpoints-xs: map-get($vuetify-breakpoints, xs);
+$breakpoints-sm: map-get($vuetify-breakpoints, sm);
+$breakpoints-md: map-get($vuetify-breakpoints, md);
+$breakpoints-lg: map-get($vuetify-breakpoints, lg);
+$breakpoints-xl: map-get($vuetify-breakpoints, xl);
+
+$breakpoints-only-xs: "(max-width: #{map-get($vuetify-breakpoints, 'md') - 0.02})";
+
+$breakpoints-sm-and-up: "(min-width: #{map-get($vuetify-breakpoints, 'sm')})";
+$breakpoints-md-and-up: "(min-width: #{map-get($vuetify-breakpoints, 'md')})";
+$breakpoints-lg-and-up: "(min-width: #{map-get($vuetify-breakpoints, 'lg')})";
+$breakpoints-xl-and-up: "(min-width: #{map-get($vuetify-breakpoints, 'xl')})";
+$breakpoints-sm-and-down: "(max-width: #{map-get($vuetify-breakpoints, 'md') - 0.02})";
+$breakpoints-md-and-down: "(max-width: #{map-get($vuetify-breakpoints, 'lg') - 0.02})";
+$breakpoints-lg-and-down: "(max-width: #{map-get($vuetify-breakpoints, 'xl') - 0.02})";
+
+/* .vue file example
+  @media #{$breakpoints-only-xs} {
+    ...
+  }
+*/

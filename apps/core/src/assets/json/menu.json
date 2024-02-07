@@ -1,0 +1,82 @@
+{
+  "mr": [
+    {
+      "id": "ers",
+      "label": "지출보고",
+      "key": "/mr/ers",
+      "icon": "mdi-home",
+      "subgroup": [
+        {
+          "title": "문서",
+          "list": [
+            { "id": "0-1", "key": "/mr/ers/tempDoc", "label": "임시 문서" },
+            { "id": "0-2", "key": "/mr/ers/tempDoc", "label": "결제 대기 / 진행 문서" },
+            { "id": "0-3", "key": "/mr/ers/tempDoc", "label": "미결 문서" },
+            { "id": "0-4", "key": "/mr/ers/tempDoc", "label": "결재 완료 문서" },
+            { "id": "0-5", "key": "/mr/ers/tempDoc", "label": "반려 문서" }
+          ]
+        },
+        {
+          "title": "작성",
+          "list": [
+            { "id": "0-6", "key": "/mr/ers/tempDoc", "label": "제품설명회(단일)" },
+            { "id": "0-7", "key": "/mr/ers/tempDoc", "label": "제품설명회(복수)" },
+            { "id": "0-8", "key": "/mr/ers/tempDoc", "label": "학술대회" },
+            { "id": "0-9", "key": "/mr/ers/tempDoc", "label": "기부" },
+            { "id": "0-10", "key": "/mr/ers/tempDoc", "label": "홍보" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mdm",
+      "label": "기준정보관리",
+      "key": "/mr/mdm",
+      "icon": "mdi-home",
+      "subgroup": [
+        {
+          "title": "거래처관리",
+          "list": [
+            { "id": "0-1", "key": "/mr/mdm/cont", "label": "거래처 정보" },
+            { "id": "0-1", "key": "/mr/mdm/cont", "label": "거래처 정보 수정 요청" }
+          ]
+        },
+        {
+          "title": "고객 관리",
+          "list": [
+            { "id": "cont1", "key": "/mr/mdm/cont", "label": "고객 정보" },
+            { "id": "cont2", "key": "/mr/mdm/cont", "label": "개인정보동의" },
+            { "id": "cont3", "key": "/mr/mdm/cont", "label": "고객 정보 수정 요청" }
+          ]
+        },
+        {
+          "title": "강연/자문 관리",
+          "list": [
+            { "id": "consult1", "key": "/mr/mdm/cont", "label": "강연/자문 정보" },
+            { "id": "consult2", "key": "/mr/mdm/cont", "label": "신규 등록" }
+          ]
+        }
+      ]
+    },
+    { "id": "2", "label": "공지", "key": "/mr/notice", "icon": "mdi-home" }
+  ],
+  "ad": [
+    { "id": "0", "label": "Home", "key": "/ad", "icon": "mdi-home" },
+    { "id": "1", "label": "About", "key": "/ad/about", "icon": "mdi-help-box" },
+    {
+      "id": "2",
+      "key": "/ad/example",
+      "label": "UI 컴포넌트",
+      "icon": "mdi-email",
+      "subgroup": [
+        {
+          "title": "알림",
+          "list": [
+            { "id": "1", "key": "/ad/example/alert", "label": "알림" },
+            { "id": "2", "key": "/ad/example/day", "label": "날짜" }
+          ]
+        }
+      ]
+    }
+  ]
+}
