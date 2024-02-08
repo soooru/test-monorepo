@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install:all": "pnpm -r install",
+    "default:serve": "pnpm -r --filter \"{apps/default/**}\" serve",
+    "default:build": "pnpm -r --filter \"{apps/default/**}\" build",
+    "components:build": "pnpm -r --filter \"{packages/components/**}\" build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.1",
+  "devDependencies": {
+    "pnpm": "^8.15.1"
+  }
 }
